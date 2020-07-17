@@ -1,22 +1,31 @@
+// Component for creating a Pie Chart
+
+// Dependency imports
 import React, { useContext } from 'react';
 import Highcharts from 'highcharts';
 import HighchartsReact from 'highcharts-react-official';
 import { useMediaQuery } from 'react-responsive';
+
+// Relative import
 import { StoreContext } from '../store/GlobalState';
 
 const Chart = () => {
   const [state] = useContext(StoreContext);
 
+  // Media query to change dimensions
   const isTabletOrMobile = useMediaQuery({ query: '(max-width: 1224px)' });
 
+  // Initializing properties required for piechart
   let labelOptions, chartOptions, chartData;
 
+  // Conditions to check against
   const checkState =
     state.driveAlone !== 0 &&
     state.drivePool !== 0 &&
     !state.publicTransport !== 0 &&
     !state.walk !== 0;
 
+  // Setting up piechart labels based on the established conditions
   checkState
     ? (labelOptions = {
         enabled: true,
@@ -27,6 +36,7 @@ const Chart = () => {
         enabled: false,
       });
 
+  // Setting up container style based on screen width
   isTabletOrMobile
     ? (chartOptions = {
         pie: {
@@ -46,6 +56,7 @@ const Chart = () => {
         },
       });
 
+  // Setting up piechart data based on the established conditions
   checkState
     ? (chartData = [
         {
@@ -79,6 +90,7 @@ const Chart = () => {
         },
       ]);
 
+  // Initializing the options for the piechart
   let options = {
     chart: {
       backgroundColor: '#222B2F',

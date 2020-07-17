@@ -1,7 +1,10 @@
+// A global context/store to pass data through the component tree
+
 import React, { createContext, useReducer } from 'react';
 
 export const StoreContext = createContext({});
 
+// initial states
 const initialState = {
   tracts: true,
   neighborhoods: false,
@@ -16,6 +19,7 @@ const initialState = {
   subHeading: '',
 };
 
+// Reducer to specify state changes
 function reducer(state, action) {
   switch (action.type) {
     case 'SET_TRACTS':

@@ -1,13 +1,20 @@
+// Component for creating a nav to toggle between layers
+
+// Dependency import
 import React, { useContext } from 'react';
+
+// Relative import
 import { StoreContext } from '../store/GlobalState';
 
 const Nav = () => {
   const [state, dispatch] = useContext(StoreContext);
 
+  // Handle clicks on tract polygons/features
   function _handleTractClick() {
     dispatch({ type: 'SET_TRACTS', payload: !state.tracts });
   }
 
+  // Handle clicks on neighborhood polygons/features
   function _handleNeighborhoodClick() {
     dispatch({ type: 'SET_NBHD', payload: !state.neighborhoods });
   }

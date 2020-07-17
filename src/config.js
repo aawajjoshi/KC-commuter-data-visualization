@@ -1,4 +1,6 @@
+// Mapbox access token
+
 module.exports = {
   SECRET_KEY:
-    'pk.eyJ1IjoiaXplaW1haSIsImEiOiJjanN2M3o5YnQwMGVwNGFwanRtM2l0bzF5In0.hlOn2QUlP2gW7hYZyxqHHQ',
+    'pk.eyJ1IjoiYWF3YWpqb3NoaSIsImEiOiJja2NnbnF1NGkwODhnMnRxaXJjNnl1YXhmIn0.bSUmUhTUw2HpGjtbk1f4MA',
 };

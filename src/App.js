@@ -1,7 +1,9 @@
+// Dependency import
 import React from 'react';
+
+// Relative imports
 import './App.css';
 import Store from './store/GlobalState';
-
 import Map from './components/Map';
 import Nav from './components/Nav';
 import Chart from './components/Chart';

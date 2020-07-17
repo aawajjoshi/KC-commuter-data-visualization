@@ -1,20 +1,23 @@
+// Component for creating a Mapbox map
+
+// Dependency imports
 import React, { useContext } from 'react';
 import ReactMapboxGl from 'react-mapbox-gl';
 import { useMediaQuery } from 'react-responsive';
-import { StoreContext } from '../store/GlobalState';
 
+// Relative imports
 import KCtracts from './KCtracts';
+import { StoreContext } from '../store/GlobalState';
 import KCneighborhoods from './KCneighborhoods';
-// import { SECRET_KEY } from '../config';
+import { SECRET_KEY } from '../config';
 
-const SECRET_KEY = process.env.REACT_APP_MAPBOX_KEY;
-
+// Initializing default Mapbox values
 const Mapbox = ReactMapboxGl({
   accessToken: SECRET_KEY,
   minZoom: 8,
 });
 
-const stateful = {
+const mapState = {
   center: [-94.578331, 39.099724],
   zoom: [9],
 };
@@ -24,9 +27,13 @@ const mapboxStyle = 'mapbox://styles/mapbox/dark-v10';
 const Map = () => {
   const [state] = useContext(StoreContext);
 
+  // Media query to change dimensions
   const isTabletOrMobile = useMediaQuery({ query: '(max-width: 1224px)' });
+
+  // Initializing value for Mapbox container style
   let contStyle;
 
+  // Setting up container style based on screen width
   isTabletOrMobile
     ? (contStyle = {
         height: '55vh',
@@ -47,10 +54,10 @@ const Map = () => {
     <>
       <div>
         <Mapbox
-          // eslint-disable-next-line
+          // eslint-disable-next-line react/style-prop-object
           style={mapboxStyle}
-          center={stateful.center}
-          zoom={stateful.zoom}
+          center={mapState.center}
+          zoom={mapState.zoom}
           containerStyle={contStyle}
         >
           <KCtracts />
