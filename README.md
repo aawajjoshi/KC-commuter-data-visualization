@@ -1,4 +1,10 @@
-# Frontend-enginner-assessment (mySidewalk)
+# KC-commuter-data-visualization
+
+## About
+
+Experimenting with React Mapbox GL and Highcharts to create a dashboard that projects Kansas City tract and neighborhood layers onto a map and visualizes each individual area's commuter information through an interactive piechart.
+
+**Check it out - https://aawajjoshi.github.io/KC-commuter-data-visualization/**
 
 ## Installing/Running
 
