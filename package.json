@@ -1,4 +1,5 @@
 {
+  "homepage": "http://aawajjoshi.github.io/KC-commuter-data-visualization",
   "name": "front-end-react",
   "version": "0.1.0",
   "private": true,
@@ -17,6 +18,8 @@
     "styled-components": "^5.1.1"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -40,6 +43,7 @@
   "devDependencies": {
     "eslint-config-prettier": "^6.11.0",
     "eslint-plugin-prettier": "^3.1.4",
+    "gh-pages": "^3.1.0",
     "prettier": "^2.0.5"
   }
 }
