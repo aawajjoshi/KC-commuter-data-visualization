@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/KC-commuter-data-visualization/static/css/main.0928de9d.chunk.css",
+    "main.js": "/KC-commuter-data-visualization/static/js/main.15c03672.chunk.js",
+    "main.js.map": "/KC-commuter-data-visualization/static/js/main.15c03672.chunk.js.map",
+    "runtime-main.js": "/KC-commuter-data-visualization/static/js/runtime-main.0d1b66d5.js",
+    "runtime-main.js.map": "/KC-commuter-data-visualization/static/js/runtime-main.0d1b66d5.js.map",
+    "static/css/2.b4a16772.chunk.css": "/KC-commuter-data-visualization/static/css/2.b4a16772.chunk.css",
+    "static/js/2.7d9316c8.chunk.js": "/KC-commuter-data-visualization/static/js/2.7d9316c8.chunk.js",
+    "static/js/2.7d9316c8.chunk.js.map": "/KC-commuter-data-visualization/static/js/2.7d9316c8.chunk.js.map",
+    "index.html": "/KC-commuter-data-visualization/index.html",
+    "precache-manifest.de013bbec8fd3828601585f4acc41460.js": "/KC-commuter-data-visualization/precache-manifest.de013bbec8fd3828601585f4acc41460.js",
+    "service-worker.js": "/KC-commuter-data-visualization/service-worker.js",
+    "static/css/2.b4a16772.chunk.css.map": "/KC-commuter-data-visualization/static/css/2.b4a16772.chunk.css.map",
+    "static/css/main.0928de9d.chunk.css.map": "/KC-commuter-data-visualization/static/css/main.0928de9d.chunk.css.map",
+    "static/js/2.7d9316c8.chunk.js.LICENSE.txt": "/KC-commuter-data-visualization/static/js/2.7d9316c8.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.0d1b66d5.js",
+    "static/css/2.b4a16772.chunk.css",
+    "static/js/2.7d9316c8.chunk.js",
+    "static/css/main.0928de9d.chunk.css",
+    "static/js/main.15c03672.chunk.js"
+  ]
+}
