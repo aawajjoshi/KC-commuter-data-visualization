@@ -9,11 +9,10 @@ import { useMediaQuery } from 'react-responsive';
 import KCtracts from './KCtracts';
 import { StoreContext } from '../store/GlobalState';
 import KCneighborhoods from './KCneighborhoods';
-import { SECRET_KEY } from '../config';
 
 // Initializing default Mapbox values
 const Mapbox = ReactMapboxGl({
-  accessToken: SECRET_KEY,
+  accessToken: process.env.REACT_APP_MAPBOX_API_KEY,
   minZoom: 8,
 });
 
